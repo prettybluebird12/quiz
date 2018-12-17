@@ -11,4 +11,12 @@ $(document).ready(function() {
         var totalScore;
     });
 
-});
+}
+var answer1 = question1;
+function q1(){
+    if(answer === ""){
+        
+        
+    }
+}
+
