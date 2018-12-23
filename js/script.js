@@ -14,9 +14,14 @@ $(document).ready(function() {
 }
 var answer1 = question1;
 function q1(){
-    if(answer === ""){
+    if(answer1 === "january || febuary || march || april || may || april"){
         
+    }
+    else if(answer1 === "july || august || september || october || november || december"){
         
+    }
+    else(){
+    
     }
 }
 

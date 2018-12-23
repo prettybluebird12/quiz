@@ -1,31 +1,54 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #0f65ef;
     font-weight: bold;
-    font-size:15px;
+    font-size:25px;
+
+    margin:10px;
 }
 
 .logo {
     width: 125px;
 }
 
+
 body {
     background-color: white;
+    
+}
+.questions{
+    text-align: center;
 }
 
-.siliconValley {
-    width: 50%;
-    height:50%;
+.pics{
+    display:flex;
+    justify-content:space-around;
+}
+.OfficeSupply{
+    width: 100%;
+    height:100%;
+    
+}
+
+
+ 
+h1{
+    text-align: center;
+    text-shadow: 3px 3px #ff0000;
+    font-size:70px;
 }
 
 #caption {
-    font-size: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px #ff0000;
+     
 }
 
-#tomImg {
-    border-radius: 50%;
-    width: 50px;
+#savImg {
+    height:40px;
+    width: 40px;
 }
 
 a {
@@ -33,7 +56,7 @@ a {
     font-weight: bold;
 }
 
-#tom {
+#sav {
     color: grey;
 }
 
