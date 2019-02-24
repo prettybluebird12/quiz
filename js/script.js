@@ -10,20 +10,19 @@ $(document).ready(function() {
         var q3Result = $("#question3").val();
         var totalScore;
     });
-}
- var finalScore = 0; 
+});
+ var finalScore;
 var result1 = 0;
 function q1(answer1){
     if(answer1 === "january" || "febuary" || "march" || "april" || "may" || "april"){
         result1 = 2+finalScore;
     }
-    else if(q1Result === "july" || "august" || "september" || "october" || "november" || "december"){
+    else if(answer1 === "july" || "august" || "september" || "october" || "november" || "december"){
         result1 = 3+finalScore;
     }
 }
+var answer1;
 q1(answer1);
-
-
 
 
 var result2 = 0;
@@ -38,23 +37,18 @@ function q2(answer2){
         result2 = 3+finalScore;
         }
 }
-q2(answer2)
+var answer2;
+q2(answer2);
+
 var result3 = 0;
 function q3(answer3){
-    if(answer3.length>5{
+    if(answer3.length>5){
         result3 = 5+finalScore;
     }
     else if(answer3.length<5){
      result3 = 10+finalScore;
     }
 }
-q3(answer3);
 
-$("#result").click(function(){
-    result1()+result2()+result3() =finalScore;
-    if(totalScore > 10){
-        $("btext").val("You are a rubber band ball! You're colorful bouncy and made of many happy layers!")
-    }
-    else if(totalScore<10)
-    $("btext").val("You are  a paper clip! Your a nosieless sedentary creature who comes in handy when the stapler is otherwise occupied!")
-}
+var answer3;
+q3(answer3);
