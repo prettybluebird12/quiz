@@ -10,51 +10,51 @@ $(document).ready(function() {
         var q3Result = $("#question3").val();
         var totalScore;
     });
-
 }
-
- 
-var score1 = 0;
-function q1(){
-    if(q1Result === "january || febuary || march || april || may || april"){
-        score1 = 2;
+ var finalScore = 0; 
+var result1 = 0;
+function q1(answer1){
+    if(answer1 === "january" || "febuary" || "march" || "april" || "may" || "april"){
+        result1 = 2+finalScore;
     }
-    else if(q1Result === "july || august || september || october || november || december"){
-        score1 = 3;
-    }
-    else(){
-    
+    else if(q1Result === "july" || "august" || "september" || "october" || "november" || "december"){
+        result1 = 3+finalScore;
     }
 }
+q1(answer1);
+
+
+
 
 var result2 = 0;
-function q2(){
-    if(q2Result === "no"){
-        result2 = 1
+function q2(answer2){
+    if(answer2 === "no"){
+       return 1+finalScore;
     }
-    else if(q2Result === "not very"){
-     result2 = 2
+    else if(answer2 === "not very"){
+     result2 = 2+finalScore;
     }
-    else if(q2Result === "very"){
-        result 2 === 3;
+    else if(answer2 === "very"){
+        result2 = 3+finalScore;
         }
 }
-
+q2(answer2)
 var result3 = 0;
-function q3(){
-    if(q3Result.length>5{
-        result3 = 10;
+function q3(answer3){
+    if(answer3.length>5{
+        result3 = 5+finalScore;
     }
-    else if(q3Result.length<5){
-     result3 = 5;
+    else if(answer3.length<5){
+     result3 = 10+finalScore;
     }
-        else(){}
 }
+q3(answer3);
 
 $("#result").click(function(){
+    result1()+result2()+result3() =finalScore;
     if(totalScore > 10){
         $("btext").val("You are a rubber band ball! You're colorful bouncy and made of many happy layers!")
     }
-    else if(totalScore<5)
+    else if(totalScore<10)
     $("btext").val("You are  a paper clip! Your a nosieless sedentary creature who comes in handy when the stapler is otherwise occupied!")
 }
