@@ -52,3 +52,12 @@ function q3(answer3){
 
 var answer3;
 q3(answer3);
+$("#result").click(function(){
+    result1+result2+result3=finalScore;
+    if(finalScore > 10){
+        $("btext").val("You are a rubber band ball! You're colorful bouncy and made of many happy layers!");
+    }
+    else if(finalScore<10){
+    $("btext").val("You are  a paper clip! Your a nosieless sedentary creature who comes in handy when the stapler is otherwise occupied!");
+    }
+});
