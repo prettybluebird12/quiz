@@ -5,10 +5,7 @@ $(document).ready(function() {
         var name = $("#name").val();
         var techPlacement = "TBD";
         var imgSrc = "https://media.giphy.com/media/22zgHX8aop488/giphy.gif";
-        var q1Result = $("#question1").val();
-        var q2Result = $("#question2").val();
-        var q3Result = $("#question3").val();
-        var totalScore;
+        var totalScore=totalScores();
     });
 
  var finalScore;
@@ -50,7 +47,7 @@ function q3(answer3){
     }
 }
 
-
+function totalScores(){
 $("#result").click(function(){
   
 q1(answer1);
@@ -58,13 +55,15 @@ q1(answer1);
 q2(answer2);
 
 q3(answer3);
+var q1Result = $("#question1").val();
+var q2Result = $("#question2").val();
+var q3Result = $("#question3").val();
 
-result1+result2+result3=finalScore;
-    if(finalScore > 10){
+if(finalScore > 10){
         $("btext").val("You are a rubber band ball! You're colorful bouncy and made of many happy layers!");
     }
     else if(finalScore<10){
     $("btext").val("You are  a paper clip! Your a nosieless sedentary creature who comes in handy when the stapler is otherwise occupied!");
     }
 });
-});
+}
