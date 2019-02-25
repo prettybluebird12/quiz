@@ -15,11 +15,11 @@ $(document).ready(function() {
          result =result+q2(answer2);
          var answer3 = $("#question3").val();
  result =result+q3(answer3);
-  if(result > 10){
-        $("#text").val("You are a rubber band ball! You're colorful bouncy and made of many happy layers!");
+  if(result > 8){
+        $("#text").text("You are a rubber band ball! You're colorful bouncy and made of many happy layers!");
     }
-    else{
-    $("#text").val("You are  a paper clip! Your a nosieless sedentary creature who comes in handy when the stapler is otherwise occupied!");
+    else if (result< 8){
+    $("#text").text("You are  a paper clip! Your a nosieless sedentary creature who comes in handy when the stapler is otherwise occupied!");
     }
 }); 
  
