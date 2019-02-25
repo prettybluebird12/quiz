@@ -6,9 +6,8 @@ $(document).ready(function() {
         var techPlacement = "TBD";
         var imgSrc = "https://media.giphy.com/media/22zgHX8aop488/giphy.gif";
         var totalScore=totalScores();
-    });
 
- var finalScore;
+ //var finalScore;
 var result1 = 0;
 function q1(answer1){
     if(answer1 === "january" || "febuary" || "march" || "april" || "may" || "april"){
@@ -67,3 +66,4 @@ if(finalScore > 10){
     }
 });
 }
+});
