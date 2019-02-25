@@ -6,7 +6,7 @@ $(document).ready(function() {
         var techPlacement = "TBD";
         var imgSrc = "https://media.giphy.com/media/22zgHX8aop488/giphy.gif";
         var totalScore=totalScores();
-
+});
  //var finalScore;
 var result1 = 0;
 function q1(answer1){
@@ -50,9 +50,7 @@ function totalScores(){
 $("#result").click(function(){
   
 q1(answer1);
- 
 q2(answer2);
-
 q3(answer3);
 var q1Result = $("#question1").val();
 var q2Result = $("#question2").val();
@@ -65,5 +63,4 @@ if(finalScore > 10){
     $("btext").val("You are  a paper clip! Your a nosieless sedentary creature who comes in handy when the stapler is otherwise occupied!");
     }
 });
-}
 });
