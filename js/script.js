@@ -16,20 +16,20 @@ $(document).ready(function() {
          var answer3 = $("#question3").val();
  result =result+q3(answer3);
   if(result > 10){
-        $("btext").val("You are a rubber band ball! You're colorful bouncy and made of many happy layers!");
+        $("#text").val("You are a rubber band ball! You're colorful bouncy and made of many happy layers!");
     }
     else{
-    $("btext").val("You are  a paper clip! Your a nosieless sedentary creature who comes in handy when the stapler is otherwise occupied!");
+    $("#text").val("You are  a paper clip! Your a nosieless sedentary creature who comes in handy when the stapler is otherwise occupied!");
     }
 }); 
  
 var result1 = 0;
 function q1(answer1){
     var result=0;
-    if(answer1 === "january" || "febuary" || "march" || "april" || "may" || "april"){
+    if(answer1 === "january" ||answer1 === "febuary" ||answer1 === "march" || answer1 ==="april" ||answer1 === "may" ||answer1 === "april"){
         return 2;
     }
-    else if(answer1 === "july" || "august" || "september" || "october" || "november" || "december"){
+    else if(answer1 === "july" || answer1 ==="august" || answer1 ==="september" ||answer1 === "october" || answer1 ==="november" ||answer1 === "december"){
         return 3;
     }
 }
