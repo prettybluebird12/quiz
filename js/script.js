@@ -15,6 +15,12 @@ $(document).ready(function() {
          result =result+q2(answer2);
          var answer3 = $("#question3").val();
  result =result+q3(answer3);
+  if(result > 10){
+        $("btext").val("You are a rubber band ball! You're colorful bouncy and made of many happy layers!");
+    }
+    else{
+    $("btext").val("You are  a paper clip! Your a nosieless sedentary creature who comes in handy when the stapler is otherwise occupied!");
+    }
 }); 
  
 var result1 = 0;
@@ -56,11 +62,6 @@ function q3(answer3){
 
 
 /*global result*/
-if(result > 10){
-        $("btext").val("You are a rubber band ball! You're colorful bouncy and made of many happy layers!");
-    }
-    else{
-    $("btext").val("You are  a paper clip! Your a nosieless sedentary creature who comes in handy when the stapler is otherwise occupied!");
-    }
+
 
 });
